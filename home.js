@@ -116,7 +116,9 @@ const deals = [
     to be itself, but use the `replace` method
     to replace the 15 with a 10.
 */
-deals 
+console.log(deals)
+deals[0] = 'title: 10% Off!,'
+console.log(deals)
 
 /*
     The restaurant is going to continue its
