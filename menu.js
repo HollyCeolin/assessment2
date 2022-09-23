@@ -87,7 +87,16 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
+let foodArr = [
+    {
+        name (string)
+        - price (number)
+        - category (string)
+        - popularity (number)
+        - rating (number)
+        - tags (array of strings)  
+    }
+]
 
 
 
@@ -148,8 +157,20 @@
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+const filterByProperty = (property, number, type) => {
+    let filteredArray = [];
+    //price is below 10 dollars
+    //pizzaObj.property < number
+    if(type === "above" ){
+        
 
+
+    }else {
+
+    }
+    return filteredArray;
+}
+filterByProperty()
 
 /*
     Invoke the `filterByProperty` function passing
