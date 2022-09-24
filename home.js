@@ -52,15 +52,24 @@ console.log(greetUser("Sebastian"))
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-const canWeDeliver = (zipCode) => {
-    if (zipCode in deliveryAreaZipCodes){
-        return "You're in our delivery zone!";
-
-    }else{
-        return "Sorry, we can't deliver to that address"
+function canWeDeliver (zipCode) {
+for (let index = 0; index < deliveryAreaZipCodes.length; index++) {
+    const inZip = deliveryAreaZipCodes[index];
+    if (inZip === zipCode) {
+        return "You're in our delivery zone!"
+        
+    } else if (inZip != zipCode) {
+        
     }
-}    
-console.log(canWeDeliver(85205))
+        return "Sorry, we can't deliver to that address."
+        
+    }
+    
+    
+}
+console.log(canWeDeliver(85205))   
+    
+
 
 
 
@@ -116,8 +125,8 @@ const deals = [
     to be itself, but use the `replace` method
     to replace the 15 with a 10.
 */
-deals[0].title = deals[0].title.replace('15', '10')
-console.log(deals[0])
+//deals[0].title = deals[0].title.replace('15', '10')
+//console.log(deals[0])
 
 /*
     The restaurant is going to continue its
@@ -132,4 +141,5 @@ console.log(deals[0])
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+console.log(deals[1])
