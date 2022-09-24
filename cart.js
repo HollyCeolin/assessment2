@@ -32,21 +32,12 @@ const cart = [
         price: 7.99
     }
 ]
-//const array1 = [1, 2, 3, 4];
-
- //0 + 1 + 2 + 3 + 4
-const initialValue = 0;
-//const summedPrice = cart.reduce(
-  
 
 
-
-
-
-const summedPrice = cart.reduce((previousValue, currentValue) => previousValue + currentValue,
-initialValue
-);
-console.log(summedPrice);
+ const summedPrice = cart.reduce((prev_value, curr_value, callback) => {
+    return prev_value + curr_value + callback
+ },9.99)
+console.log(summedPrice[0])
 
 //////////////////PROBLEM 2////////////////////
 /*  
