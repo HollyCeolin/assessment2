@@ -58,7 +58,9 @@ console.log(`Sum of all food is ${sum}`);
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+function calcFinalPrice (cartTotal, couponValue, tax) {
+
+}
 
 
 
