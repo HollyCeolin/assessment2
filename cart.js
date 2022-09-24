@@ -100,18 +100,9 @@ console.log(`Sum of all food is ${sum}`);
 
 const customer = [
 { 
-    name:['Sebastian', 'Ceolin'] 
-},
-    
-{ 
-    phone: 8433687519
-},
-
-{ 
-    address: '2708 W Franklin St. Evansville, IN 47712'
-},
-
-{ 
+    name: 'Sebastian Ceolin',
+    phone: 8433687519,
+    address: '2708 W Franklin St. Evansville, IN 47712',
     email: 'hollyceolin@gmail.com' 
 },
     

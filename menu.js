@@ -87,7 +87,7 @@
     data in some functions that you'll write.
 */
 
-let foodArr = [
+/*let foodArr = [
     {
         name (string)
         - price (number)
@@ -95,6 +95,51 @@ let foodArr = [
         - popularity (number)
         - rating (number)
         - tags (array of strings)  
+    }
+]*/
+
+const foodArr = [
+    {
+        name: 'pizza', 
+        price: 9.99,
+        category: 'pizza',
+        popularity: 5,
+        rating: 5.5,
+        tags: ['cheesy']
+    }, 
+    {
+        name: 'pizza', 
+        price: 9.99,
+        category: 'pizza',
+        popularity: 5,
+        rating: 5.5,
+        tags: ['cheesy']
+    }, 
+    {
+        name: 'pizza', 
+        price: 9.99,
+        category: 'pizza',
+        popularity: 5,
+        rating: 5.5,
+        tags: ['cheesy']
+    },
+
+    {
+        name: 'pizza', 
+        price: 9.99,
+        category: 'pizza',
+        popularity: 5,
+        rating: 5.5,
+        tags: ['cheesy']
+    },
+
+    {
+        name: 'pizza', 
+        price: 9.99,
+        category: 'pizza',
+        popularity: 5,
+        rating: 5.5,
+        tags: ['cheesy']
     }
 ]
 
@@ -162,7 +207,7 @@ const filterByProperty = (property, number, type) => {
     //price is below 10 dollars
     //pizzaObj.property < number
     if(type === "above" ){
-        
+
 
 
     }else {
