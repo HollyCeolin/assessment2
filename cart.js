@@ -32,12 +32,16 @@ const cart = [
         price: 7.99
     }
 ]
+//console.log(cart[1])
+//const callback = (acc, currVal, index) => {
 
+//};
 
- const summedPrice = cart.reduce((prev_value, curr_value, callback) => {
-    return prev_value + curr_value + callback
- },9.99)
-console.log(summedPrice[0])
+const sum = cart.reduce((accumulator, current) => {
+    return accumulator + current;
+});
+
+console.log(`Sum of all food is ${sum}`);
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -79,7 +83,13 @@ console.log(summedPrice[0])
 */
 
 /*
-    TEXT ANSWER HERE
+    customer object
+
+    Properties      Data Type
+    Name            Array(add multiple names)  The restaurant needs to know the name for the order.
+    Phone Number    Num(entered as only numbers)     They need to be able to call the customet with any questions about their order.
+    Address         String (entered as a string) They need the address if they offer delivery.
+    Email           String (entered as a string) They will want their email to keep in contact with the customer about any specials or events coming up at the restaurant.
 
 */
 
@@ -88,4 +98,22 @@ console.log(summedPrice[0])
     guidelines.
 */
 
-//CODE HERE
+const customer = [
+{ 
+    name:['Sebastian', 'Ceolin'] 
+},
+    
+{ 
+    phone: 8433687519
+},
+
+{ 
+    address: '2708 W Franklin St. Evansville, IN 47712'
+},
+
+{ 
+    email: 'hollyceolin@gmail.com' 
+},
+    
+]
+console.log(customer)
