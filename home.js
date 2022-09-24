@@ -50,24 +50,24 @@ console.log(greetUser("Sebastian"))
         // `You're in our delivery zone!`
 */
 
-//const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
+const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//function canWeDeliver (zipCode) {
-//for (let index = 0; index < deliveryAreaZipCodes.length; index++) {
-    //const inZip = deliveryAreaZipCodes[index];
-    //if (inZip === zipCode) {
-        //return "You're in our delivery zone!"
+function canWeDeliver (zipCode) {
+for (let index = 0; index < deliveryAreaZipCodes.length; index++) {
+    const inZip = deliveryAreaZipCodes[index];
+    if (inZip === zipCode) {
+        return "You're in our delivery zone!"
         
-   // } else if (inZip != zipCode) {
+    } else if (inZip != zipCode) {
         
-    //}
-      //  return "Sorry, we can't deliver to that address."
+    }
+        return "Sorry, we can't deliver to that address."
         
-    //}
+    }
     
     
-//}
-//console.log(canWeDeliver(85205))   
+}
+console.log(canWeDeliver(85205))   
     
 
 

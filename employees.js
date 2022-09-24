@@ -19,7 +19,8 @@
     stored on the object.
 */
 
-//CODE HERE
+class
+Employee(name, shifts)
 
 
 
