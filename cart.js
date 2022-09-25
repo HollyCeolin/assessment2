@@ -32,16 +32,16 @@ const cart = [
         price: 7.99
     }
 ]
-//console.log(cart[1])
-//const callback = (acc, currVal, index) => {
+//const initialValue = 0;
+//const cartTotal = cart.reduce((preValue, currVal, initialValue) => (cart[0].price + cart[1].price, 0));
+//initialValue
+let cartTotal = cart.reduce((accumulatingValue, currentCartValue) => {
+    let { price } = currentCartValue
+    return accumulatingValue + price
+},0)
 
-//};
 
-const sum = cart.reduce((accumulator, current) => {
-    return accumulator + current;
-});
-
-console.log(`Sum of all food is ${sum}`);
+console.log(cartTotal);
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -58,11 +58,14 @@ console.log(`Sum of all food is ${sum}`);
     decimals, for example: .06 for a 6% tax.
 */
 
-function calcFinalPrice (cartTotal, couponValue, tax) {
+function calcFinalPrice(cartTotal, couponValue, tax){
+    let totalTax = cartTotal * tax
+    let couponTotal = cartTotal - couponValue;
+    let total = totalTax + couponTotal
+    return total
 
 }
-
-
+console.log(calcFinalPrice(cartTotal, 5, .07))
 
 //////////////////PROBLEM 3////////////////////
 /*  
