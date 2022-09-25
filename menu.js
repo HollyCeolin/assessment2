@@ -169,10 +169,14 @@ const foodArr = [
     your food objects has.
 */
 
-console.log(foodArr.filter("pineapple"))
 
- const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+ const filteredFood = foodArr.filter(([property,value]) => typeof value ==='string'
+ );
+ const justStrngs = Object.fromEntries(filteredFood)
+ let filteredArray = [];
+ if (value = '') {
+    filteredArray = foodArr.filter( (pizza_obj) => pizza_obj[property])
+ console.log(filteredFood(tags, 'pineapple'))
 
 
 //////////////////PROBLEM 5////////////////////
@@ -226,4 +230,4 @@ const filterByProperty = (property, number, type) => {
     }
     return filteredArray;
 }
-console.log(filterByProperty("popularity", 9, "above"))
+console.log(filterByProperty("popularity", 9, "above"))}
