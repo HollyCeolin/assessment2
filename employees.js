@@ -65,10 +65,11 @@ empOne.getSchedule()
     dot or bracket notation.
 */
 
-const empTwo = {...empOne} = new Employee("Nick")
-
-empTwo.getSchedule()
-
+let empTwo = {
+    ...empOne
+};
+empTwo.name ="Nick"
+console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
 /*  
