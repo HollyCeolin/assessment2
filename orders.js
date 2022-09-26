@@ -29,7 +29,21 @@
     stored on the object.
 */
 
-//CODE HERE
+class Ticket {
+    
+    constructor(items, orderTime, customerId) {
+        this.status = 'queued';
+        this.orderTime =
+        this.customerId = 
+    };
+    
+    updateStatus(newStatus:);{
+        
+    }
+
+    }
+    
+   
 
 
 
